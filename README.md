@@ -16,24 +16,28 @@
 
 ## HOL(Hands-on Lab) 진행 순서
 
-### 기술 세션 : Azure의 Serverless 컴퓨팅
+### 기술 세션 : Azure의 Serverless 컴퓨팅 (60분)
 
-- 실습 1 : 온라인으로 Azure Functions 개발 실습
+- 실습 준비 (20분)
+    - 필요한 Azure 리소스 생성
+        - 리소스 그룹, 저장소 계정, 앱 서비스 계획 등
+
+- 실습 1 : 온라인으로 Azure Functions 개발 실습 (20분)
     - Azure Portal을 통한 Node.js 코딩
 	- 브라우저 및 PostMan을 사용하여 테스트
 	- 모니터링 및 관리 테스트
 
-- 실습 2 : Azure CLI를 이용한 Function 개발 실습
+- 실습 2 : Azure CLI를 이용한 Function 개발 실습 (20분)
 	- Command Line Interface를 통해서 개발
 	- Function pack을 이용한 배포
 
-- 실습 3 : Visual Studio를 이용한 Function 개발 실습
+- 실습 3 : Visual Studio를 이용한 Function 개발 실습 (20분)
 	- 최강의 RAD/IDE 도구인 Visual Studio를 이용한 실습
 	- Queue 트리거를 통한 메시지 수신
     - 로컬 디버깅 실습
     - VS를 사용한 빠른 배포 실습
 
-- 실습 4 : 이미지 프로세싱 실습
+- 실습 4 : 이미지 프로세싱 실습 (30분)
     - Blob 트리거와 이미지 프로세싱 실습 
     - 기존 개발되어 있는 소스를 사용하여 변형 실습
     - 시나리오
@@ -42,9 +46,9 @@
         - 행복치수에 따라 이미지 배경을 변경 및 이름과 직급을 프린트
         - Output용 Blob 저장소에 변형된 이미지를 저장
 
-### 미니 세션 : 서버리스 핵페스트 프로그램 소개
+### 미니 세션 : 서버리스 핵페스트 프로그램 소개 (10분)
 
-- 실습 4 : Logic 앱을 사용한 워크플로우 실습
+- 실습 4 : Logic 앱을 사용한 워크플로우 실습 (30분)
 	- Facebook과 Blob Storage(Dropbox) 연계 실습
     - 시나리오
         - 자신의 페이스북 담벼락에 글을 남기면
@@ -52,7 +56,7 @@
         - 지정된 Blob 저장소에 파일로 생성함
         - (option) 생성된 음성 파일을 DropBox에도 생성
 
-- 실습 5 : Azure Function + Logic App 종합 실습
+- 실습 5 : Azure Function + Logic App 종합 실습 (60분)
     - 메일로 요청을 받아서 프로세싱된 이미지를 회신해주는 시나리오 실습
     - 실습 4에서 만든 Function과 연계하여 워크플로우를 구성
     - 이 실습은 사정에 따라 다른 시나리오로 변경될 수 있음
@@ -67,7 +71,7 @@ MacBook 유저의 경우에는 가상화를 통해서 Windows OS를 준비하시
 > 3. 테더링 가능한 스마트폰(네트워크 사정이 안 좋을 경우 테더링을 강추합니다)  
 
 
-> **준비물 미 준비 시에는 실습을 제대로 따라하실 수 없으며, 그 부분은 본인의 책임입니다**
+**준비물 미 준비 시에는 실습을 제대로 따라하실 수 없으며, 그 부분은 본인의 책임입니다**
 
 ### 강좌 참여 시 사전 준비 및 설치 사항(필수)
 > - Visual Studio 2017 설치 (Community 버전 무관)  
