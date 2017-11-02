@@ -1,0 +1,19 @@
+{
+  "bindings": [
+    {
+      "type": "blob",
+      "name": "outputBlob",
+      "path": "card-output/{name}.jpg",
+      "connection": "cardgenfunc_STORAGE",
+      "direction": "out"
+    },
+    {
+      "type": "blobTrigger",
+      "name": "image",
+      "path": "card-input/{name}.jpg",
+      "connection": "cardgenfunc_STORAGE",
+      "direction": "in"
+    }
+  ],
+  "disabled": false
+}
