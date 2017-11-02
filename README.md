@@ -25,7 +25,13 @@
 	- Command Line Interface를 통해서 개발
 	- Function pack을 이용한 배포
 
-- 실습 3 : Visual Studio를 이용한 서버리스 개발
+- 실습 3 : Visual Studio를 이용한 Function 개발 실습
+	- 최강의 RAD/IDE 도구인 Visual Studio를 이용한 실습
+	- Queue 트리거를 통한 메시지 수신
+    - 로컬 디버깅 실습
+    - VS를 사용한 빠른 배포 실습
+
+- 실습 4 : 이미지 프로세싱 실습
     - Blob 트리거와 이미지 프로세싱 실습 
     - 기존 개발되어 있는 소스를 사용하여 변형 실습
     - 시나리오
@@ -46,7 +52,7 @@
 
 - 실습 5 : Azure Function + Logic App 종합 실습
     - 메일로 요청을 받아서 프로세싱된 이미지를 회신해주는 시나리오 실습
-    - 실습 3에서 만든 Function과 연계하여 워크플로우를 구성
+    - 실습 4에서 만든 Function과 연계하여 워크플로우를 구성
     - 이 실습은 사정에 따라 다른 시나리오로 변경될 수 있음
     
 ### 모든 참가자는 다음의 사항들을 반드시 본인의 노트북에 설치하고 오셔야 합니다. 
@@ -71,3 +77,4 @@ MacBook 유저의 경우에는 가상화를 통해서 Windows OS를 준비하시
 > - Node 8.5.0 설치
 > - Azure Functions Core Tools 설치
 > - Postman 설치
+> - Azure Storage Explorer 설치
