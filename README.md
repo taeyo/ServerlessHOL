@@ -75,9 +75,10 @@ MacBook 유저의 경우에는 가상화를 통해서 Windows OS를 준비하시
 
 ### 강좌 참여 시 사전 준비 및 설치 사항(필수)
 > - Visual Studio 2017 설치 (Community 버전 무관)  
+>   이미 설치되어 있던 분들은 15.4.1 이상의 버전으로 업데이트를 수행
 >   (빨간 박스로 표시한 Azure 개발, ASP.NET 개발은 필수이며, 그 밖에 필요한 것 설치)
 >   ![이미지](./images/install.png)
-> 
+>    
 > - Visual Studio Code 설치 : https://code.visualstudio.com/  
 > - Azure CLI 설치
 > - Node 8.5.0 설치
