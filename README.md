@@ -74,13 +74,20 @@ MacBook 유저의 경우에는 가상화를 통해서 Windows OS를 준비하시
 **준비물 미 준비 시에는 실습을 제대로 따라하실 수 없으며, 그 부분은 본인의 책임입니다**
 
 ### 강좌 참여 시 사전 준비 및 설치 사항(필수)
-> - Visual Studio 2017 설치 (Community 버전 무관)  
->   (빨간 박스로 표시한 Azure 개발, ASP.NET 개발은 필수이며, 그 밖에 필요한 것 설치)
+> - Visual Studio 2017. (Community 버전 무관)  
+>   (빨간 박스로 표시한 Azure 개발, ASP.NET 개발은 필수이며, 그 밖에 필요한 것 설치)  
+>   이미 설치한 사람은 반드시 업데이트를 해서 15.4 버전     이상으로 업데이트    
 >   ![이미지](./images/install.png)
 > 
 > - Visual Studio Code 설치 : https://code.visualstudio.com/  
 > - Azure CLI 설치
-> - Node 8.5.0 설치
+>   - Windows : https://aka.ms/InstallAzureCliWindows    
+>   - 그 밖에 : https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest  
+> - Node 8.5 이상의 버전 설치 
+>   - https://nodejs.org/en/
 > - Azure Functions Core Tools 설치
+>   - npm i -g azure-functions-core-tools@core
 > - Postman 설치
+>   - https://www.getpostman.com/postman     
 > - Azure Storage Explorer 설치
+>   - https://azure.microsoft.com/en-us/features/storage-explorer/
