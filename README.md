@@ -78,7 +78,7 @@ MacBook 유저의 경우에는 가상화를 통해서 Windows OS를 준비하시
 >   (빨간 박스로 표시한 Azure 개발, ASP.NET 개발은 필수이며, 그 밖에 필요한 것 설치)  
 >   이미 설치한 사람은 반드시 업데이트를 해서 15.4 버전     이상으로 업데이트    
 >   ![이미지](./images/install.png)
-> 
+>    
 > - Visual Studio Code 설치 : https://code.visualstudio.com/  
 > - Azure CLI 설치
 >   - Windows : https://aka.ms/InstallAzureCliWindows    
