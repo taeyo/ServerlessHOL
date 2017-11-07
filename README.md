@@ -4,7 +4,7 @@
 
 이번 HOL에서는 Azure에서 제공하는 서버리스 기술인 Function App과 Logic App을 직접 코딩하고 개발하면서 그 뛰어난 유연성과 효율성을 직접 느낄 수 있도록 할 예정입니다. 우선 서버리스의 기본적인 개요를 전문 강사의 기술 세션을 통해서 살펴본 뒤, 초급부터 중급에 이르는 다양한 실습들을 각자 자신의 노트북에서 직접 Coding 해 보는 시간을 갖습니다.
 
-흔하게 접하기 어려운 실습 워크샵이기에 서버리스를 배워보고 싶으는 분들은 이번 HOL을 놓치지 마세요!
+자주 접하기 쉽지 않은 '실습' 워크샵이기에 서버리스를 배워보고 싶으는 분들은 이번 HOL을 놓치지 마세요!
 
 #### **대상** : 기업에서 근무하는 초, 중급 개발자
 
@@ -12,24 +12,26 @@
 
 #### 실습시간(예상) : 5 시간 
 
-#### 참가자 특전 : (원할 경우) 기술 전문가의 무료 컨설팅/핵페스트 프로그램 제공 
+#### 참가자 특전 : (원할 경우) 서버리스 관련 무료 컨설팅/핵페스트 프로그램 제공 
 
 ## HOL(Hands-on Lab) 진행 순서
 
-### 기술 세션 : Azure의 Serverless 컴퓨팅 (60분)
+### 기술 세션 : Azure의 Serverless 컴퓨팅 I (60분)
 
 - 실습 준비 (20분)
     - 필요한 Azure 리소스 생성
         - 리소스 그룹, 저장소 계정, 앱 서비스 계획 등
 
 - 실습 1 : 온라인으로 Azure Functions 개발 실습 (20분)
-    - Azure Portal을 통한 Node.js 코딩
-	- 브라우저 및 PostMan을 사용하여 테스트
+    - Azure Portal을 통한 코딩 실습
+	- 브라우저 및 PostMan을 사용한 테스트
+    - 트리거, 바인딩 실습
 	- 모니터링 및 관리 테스트
 
 - 실습 2 : Azure CLI를 이용한 Function 개발 실습 (20분)
 	- Command Line Interface를 통해서 개발
-	- Function pack을 이용한 배포
+    - 로컬 머신 테스트
+	- Function pack을 이용한 서버 배포
 
 - 실습 3 : Visual Studio를 이용한 Function 개발 실습 (20분)
 	- 최강의 RAD/IDE 도구인 Visual Studio를 이용한 실습
@@ -42,17 +44,19 @@
     - 기존 개발되어 있는 소스를 사용하여 변형 실습
     - 시나리오
         - 인물 사진을 Blob 저장소에 저장하면
-        - 해당 이미지를 AI : Vision API로 분석하여
+        - 해당 이미지를 Microsoft AI : Vision API로 분석하여
         - 행복치수에 따라 이미지 배경을 변경 및 이름과 직급을 프린트
         - Output용 Blob 저장소에 변형된 이미지를 저장
 
 ### 미니 세션 : 서버리스 핵페스트 프로그램 소개 (10분)
 
+### 기술 세션 : Azure의 Serverless 컴퓨팅 II (20분)
+
 - 실습 4 : Logic 앱을 사용한 워크플로우 실습 (30분)
 	- Facebook과 Blob Storage(Dropbox) 연계 실습
     - 시나리오
         - 자신의 페이스북 담벼락에 글을 남기면
-        - 그 텍스트를 음성으로 변환하고
+        - 그 텍스트를 음성으로 변환(Text to Sppech)하고
         - 지정된 Blob 저장소에 파일로 생성함
         - (option) 생성된 음성 파일을 DropBox에도 생성
 
@@ -63,7 +67,7 @@
     
 ### 모든 참가자는 다음의 사항들을 반드시 본인의 노트북에 설치하고 오셔야 합니다. 
 
-MacBook 유저의 경우에는 가상화를 통해서 Windows OS를 준비하시거나 별도의 Windows 노트북을 지참하시는 것을 권장합니다. 이는 MacBook에는 Visual Studio (Windows)를 설치할 수 없기에 전체 실습과정 중 50%만 실습하실 수 있습니다
+MacBook 유저의 경우에는 가상화를 통해서 Windows OS를 준비하시거나 별도의 Windows 노트북을 지참하시는 것을 권장합니다. 이는 MacBook에는 Visual Studio (Windows)를 설치할 수 없기에 일부 실습(예, 실습 3)을 수행하실 수 없기 때문입니다
 
 ### 참가자 준비물 (필수)
 > 1. 노트북 (Windows OS)
@@ -75,19 +79,22 @@ MacBook 유저의 경우에는 가상화를 통해서 Windows OS를 준비하시
 
 ### 강좌 참여 시 사전 준비 및 설치 사항(필수)
 > - Visual Studio 2017. (Community 버전 무관)  
->   (빨간 박스로 표시한 Azure 개발, ASP.NET 개발은 필수이며, 그 밖에 필요한 것 설치)  
->   이미 설치한 사람은 반드시 업데이트를 해서 15.4 버전     이상으로 업데이트    
+>   (빨간 박스로 표시한 Azure 개발은 필수이며, 그 밖에 필요한 것 설치)  
+>   이미 설치한 사람은 반드시 업데이트를 해서 **15.4 버전** 이상으로 업데이트    
 >   ![이미지](./images/install.png)
 >    
 > - Visual Studio Code 설치 : https://code.visualstudio.com/  
 > - Azure CLI 설치
 >   - Windows : https://aka.ms/InstallAzureCliWindows    
->   - 그 밖에 : https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest  
+>   - Mac OS : https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest  
 > - Node 8.5 이상의 버전 설치 
 >   - https://nodejs.org/en/
-> - Azure Functions Core Tools 설치
->   - npm i -g azure-functions-core-tools@core
+> - Azure Functions Core Tools 설치   
+>   - Windows : npm i -g azure-functions-core-tools@core    
+>   - Mac OS : sudo npm i -g azure-functions-core-tools@core --unsafe-perm   
 > - Postman 설치
 >   - https://www.getpostman.com/postman     
 > - Azure Storage Explorer 설치
 >   - https://azure.microsoft.com/en-us/features/storage-explorer/
+> 
+> ## 꼭 미리 설치하고 오세요!!!!
