@@ -52,7 +52,7 @@
 
 ### 기술 세션 : Azure의 Serverless 컴퓨팅 II (20분)
 
-- 실습 4 : Logic 앱을 사용한 워크플로우 실습 (30분)
+- 실습 5 : Logic 앱을 사용한 워크플로우 실습 (30분)
 	- Facebook과 Blob Storage(Dropbox) 연계 실습
     - 시나리오
         - 자신의 페이스북 담벼락에 글을 남기면
@@ -60,7 +60,7 @@
         - 지정된 Blob 저장소에 파일로 생성함
         - (option) 생성된 음성 파일을 DropBox에도 생성
 
-- 실습 5 : Azure Function + Logic App 종합 실습 (60분)
+- 실습 6 : Azure Function + Logic App 종합 실습 (60분)
     - 메일로 요청을 받아서 프로세싱된 이미지를 회신해주는 시나리오 실습
     - 실습 4에서 만든 Function과 연계하여 워크플로우를 구성
     - 이 실습은 사정에 따라 다른 시나리오로 변경될 수 있음
