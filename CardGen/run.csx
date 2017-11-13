@@ -11,9 +11,16 @@ using System.Drawing.Imaging;
 private const string EMOTION_API_URI      = "https://westus.api.cognitive.microsoft.com/emotion/v1.0/recognize";
 private const string EMOTION_API_KEY_NAME = "EmotionAPIKey";
 private const string ASSETS_FOLDER        = "assets";
+private static string ASSETS_PATH = "";
 
-public static async Task Run(byte[] image, string name, Stream outputBlob, TraceWriter log)
+public static async Task Run(byte[] image, string name, Stream outputBlob, 
+    TraceWriter log,
+    ExecutionContext ctx)
 {
+    ASSETS_PATH = Path.Combine(
+        ctx.FunctionDirectory, 
+        ASSETS_FOLDER);
+
     string result = await CallEmotionAPI(image);
     log.Info(result);    
  
@@ -108,8 +115,7 @@ static string GetFullImagePath(string filename)
     //   filename);
 
     var path = Path.Combine(
-        @"D:\home\site\wwwroot", 
-        ASSETS_FOLDER,
+        ASSETS_PATH,
         filename);
 
     return Path.GetFullPath(path);
