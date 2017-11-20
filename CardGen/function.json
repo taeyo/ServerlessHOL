@@ -4,14 +4,14 @@
       "type": "blob",
       "name": "outputBlob",
       "path": "card-output/{name}.jpg",
-      "connection": "cardgenfunc_STORAGE",
+      "connection": "ServerlessStorage",
       "direction": "out"
     },
     {
       "type": "blobTrigger",
       "name": "image",
       "path": "card-input/{name}.jpg",
-      "connection": "cardgenfunc_STORAGE",
+      "connection": "ServerlessStorage",
       "direction": "in"
     }
   ],
