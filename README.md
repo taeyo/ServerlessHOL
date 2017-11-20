@@ -28,8 +28,7 @@
     - 트리거, 바인딩 실습
 	- 모니터링 및 관리 테스트
 
-- 실습 2 : Azure CLI를 이용한 Function 개발 실습 (20분)
-    - 참고 링크 : [http://github.com/Azure-Samples/azure-serverless-workshop-team-assistant/tree/master/2-hello-functions](http://github.com/Azure-Samples/azure-serverless-workshop-team-assistant/tree/master/2-hello-functions)  
+- 실습 2 : Azure CLI를 이용한 Function 개발 실습 (20분) 
 	- Command Line Interface를 통해서 개발
     - 로컬 머신 테스트
 	- Function pack을 이용한 서버 배포
