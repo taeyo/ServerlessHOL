@@ -44,6 +44,6 @@
 
 > 시작 전에 복사해 둘 것
 >	- Storage Account 연결 문자열 설정
->	- EmotionAPIKey
->       -  Emotion API의 키
->   - Text Analytics 의 키
+>	- Emotion API의 키 
+>   - Text Analytics 의 키 
+>   - Text Analytics 의 URL 

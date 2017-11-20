@@ -29,6 +29,7 @@
 	- 모니터링 및 관리 테스트
 
 - 실습 2 : Azure CLI를 이용한 Function 개발 실습 (20분)
+    - 참고 링크 : [http://github.com/Azure-Samples/azure-serverless-workshop-team-assistant/tree/master/2-hello-functions](http://github.com/Azure-Samples/azure-serverless-workshop-team-assistant/tree/master/2-hello-functions)  
 	- Command Line Interface를 통해서 개발
     - 로컬 머신 테스트
 	- Function pack을 이용한 서버 배포
@@ -43,6 +44,7 @@
         - Output용 Blob 저장소에 변형된 이미지를 저장
 
 - 실습 4 : Visual Studio를 이용한 Function 개발 실습 (20분)
+    - 참고 링크 : [http://docs.microsoft.com/en-us/azure/azure-functions/functions-develop-vs](http://docs.microsoft.com/en-us/azure/azure-functions/functions-develop-vs)   
 	- 최강의 RAD/IDE 도구인 Visual Studio를 이용한 실습
 	- Queue 트리거를 통한 메시지 수신
     - 로컬 디버깅 실습
@@ -61,9 +63,10 @@
         - (option) 생성된 음성 파일을 DropBox에도 생성
 
 - 실습 6 : Azure Function + Logic App 종합 실습 (60분)
-    - 메일로 요청을 받아서 프로세싱된 이미지를 회신해주는 시나리오 실습
-    - 실습 4에서 만든 Function과 연계하여 워크플로우를 구성
-    - 이 실습은 사정에 따라 다른 시나리오로 변경될 수 있음
+    - 참고 링크 : [http://docs.microsoft.com/en-us/azure/azure-functions/functions-twitter-email](http://docs.microsoft.com/en-us/azure/azure-functions/functions-twitter-email)     
+    - 페이스북에 부정적인 글이 올라오면(영어)
+    - 그 구문의 sentiment(감정)을 해석해서, 신호등 색상으로 상태를 판단
+    - 'Red' 상태인 경우에는 관리자에게 메일로 그 사실을 통보
     
 ### 모든 참가자는 다음의 사항들을 반드시 본인의 노트북에 설치하고 오셔야 합니다. 
 
