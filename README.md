@@ -69,7 +69,7 @@
     
 ### 모든 참가자는 다음의 사항들을 반드시 본인의 노트북에 설치하고 오셔야 합니다. 
 
-MacBook 유저의 경우에는 가상화를 통해서 Windows OS를 준비하시거나 별도의 Windows 노트북을 지참하시는 것을 권장합니다. 이는 MacBook에는 Visual Studio (Windows)를 설치할 수 없기에 일부 실습(예, 실습 3)을 수행하실 수 없기 때문입니다
+MacBook 유저의 경우에는 가상화를 통해서 Windows OS를 준비하시거나 별도의 Windows 노트북을 지참하시는 것을 권장합니다. 이는 MacBook에는 Visual Studio (Windows)를 설치할 수 없기에 일부 실습(예, 실습 4)을 수행하실 수 없기 때문입니다
 
 ### 참가자 준비물 (필수)
 > 1. 노트북 (Windows OS)
