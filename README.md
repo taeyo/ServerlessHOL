@@ -89,11 +89,16 @@ MacBook 유저의 경우에는 가상화를 통해서 Windows OS를 준비하시
 > - Azure CLI 설치
 >   - Windows : https://aka.ms/InstallAzureCliWindows    
 >   - Mac OS : https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest  
-> - Node 8.5 이상의 버전 설치 
+> - Node 8.5 이상의 Stable 버전 설치 (9.X 버전은 안됩니다)
 >   - https://nodejs.org/en/
-> - Azure Functions Core Tools 설치   
+> - .NET Core 2.0 런타임 설치 
+>   - x64 : [https://www.microsoft.com/net/download/thank-you/dotnet-runtime-2.0.3-windows-x64-installer](https://www.microsoft.com/net/download/thank-you/dotnet-runtime-2.0.3-windows-x64-installer)
+>   - x86: [https://www.microsoft.com/net/download/thank-you/dotnet-runtime-2.0.3-windows-x86-installer](https://www.microsoft.com/net/download/thank-you/dotnet-runtime-2.0.3-windows-x86-installer)
+> - Azure Functions Core Tools 설치 (CMD 명령 프롬프트에서 실행) 
 >   - Windows : npm i -g azure-functions-core-tools@core    
 >   - Mac OS : sudo npm i -g azure-functions-core-tools@core --unsafe-perm   
+> - Azure Functions Pack 설치 (CMD 명령 프롬프트에서 실행) 
+>   - npm i -g azure-functions-pack    
 > - Postman 설치
 >   - https://www.getpostman.com/postman     
 > - Azure Storage Explorer 설치
