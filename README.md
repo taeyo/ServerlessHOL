@@ -61,7 +61,7 @@
         - 지정된 Blob 저장소에 파일로 생성함
         - (option) 생성된 음성 파일을 DropBox에도 생성
 
-- 실습 6 : Azure Function + Logic App 종합 실습 (60분)
+- 실습 6 : Azure Function + Logic App 종합 실습 (40분)
     - 참고 링크 : [http://docs.microsoft.com/en-us/azure/azure-functions/functions-twitter-email](http://docs.microsoft.com/en-us/azure/azure-functions/functions-twitter-email)     
     - 페이스북에 부정적인 글이 올라오면(영어)
     - 그 구문의 sentiment(감정)을 해석해서, 신호등 색상으로 상태를 판단
