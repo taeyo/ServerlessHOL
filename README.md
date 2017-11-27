@@ -28,25 +28,26 @@
     - 트리거, 바인딩 실습
 	- 모니터링 및 관리 테스트
 
-- 실습 2 : Azure CLI를 이용한 Function 개발 실습 (20분)
+- 실습 2 : Azure CLI를 이용한 Function 개발 실습 (20분) 
 	- Command Line Interface를 통해서 개발
     - 로컬 머신 테스트
 	- Function pack을 이용한 서버 배포
 
-- 실습 3 : Visual Studio를 이용한 Function 개발 실습 (20분)
-	- 최강의 RAD/IDE 도구인 Visual Studio를 이용한 실습
-	- Queue 트리거를 통한 메시지 수신
-    - 로컬 디버깅 실습
-    - VS를 사용한 빠른 배포 실습
-
-- 실습 4 : 이미지 프로세싱 실습 (30분)
+- 실습 3 : 이미지 프로세싱 실습 (30분)
     - Blob 트리거와 이미지 프로세싱 실습 
     - 기존 개발되어 있는 소스를 사용하여 변형 실습
     - 시나리오
         - 인물 사진을 Blob 저장소에 저장하면
         - 해당 이미지를 Microsoft AI : Vision API로 분석하여
-        - 행복치수에 따라 이미지 배경을 변경 및 이름과 직급을 프린트
+        - 행복 지수에 따라 이미지 배경을 변경 및 이름과 직급을 기입
         - Output용 Blob 저장소에 변형된 이미지를 저장
+
+- 실습 4 : Visual Studio를 이용한 Function 개발 실습 (20분)
+    - 참고 링크 : [http://docs.microsoft.com/en-us/azure/azure-functions/functions-develop-vs](http://docs.microsoft.com/en-us/azure/azure-functions/functions-develop-vs)   
+	- 최강의 RAD/IDE 도구인 Visual Studio를 이용한 실습
+	- Queue 트리거를 통한 메시지 수신
+    - 로컬 디버깅 실습
+    - VS를 사용한 빠른 배포 실습
 
 ### 미니 세션 : 서버리스 핵페스트 프로그램 소개 (10분)
 
@@ -60,14 +61,15 @@
         - 지정된 Blob 저장소에 파일로 생성함
         - (option) 생성된 음성 파일을 DropBox에도 생성
 
-- 실습 6 : Azure Function + Logic App 종합 실습 (60분)
-    - 메일로 요청을 받아서 프로세싱된 이미지를 회신해주는 시나리오 실습
-    - 실습 4에서 만든 Function과 연계하여 워크플로우를 구성
-    - 이 실습은 사정에 따라 다른 시나리오로 변경될 수 있음
+- 실습 6 : Azure Function + Logic App 종합 실습 (40분)
+    - 참고 링크 : [http://docs.microsoft.com/en-us/azure/azure-functions/functions-twitter-email](http://docs.microsoft.com/en-us/azure/azure-functions/functions-twitter-email)     
+    - 페이스북에 부정적인 글이 올라오면(영어)
+    - 그 구문의 sentiment(감정)을 해석해서, 신호등 색상으로 상태를 판단
+    - 'Red' 상태인 경우에는 관리자에게 메일로 그 사실을 통보
     
 ### 모든 참가자는 다음의 사항들을 반드시 본인의 노트북에 설치하고 오셔야 합니다. 
 
-MacBook 유저의 경우에는 가상화를 통해서 Windows OS를 준비하시거나 별도의 Windows 노트북을 지참하시는 것을 권장합니다. 이는 MacBook에는 Visual Studio (Windows)를 설치할 수 없기에 일부 실습(예, 실습 3)을 수행하실 수 없기 때문입니다
+MacBook 유저의 경우에는 가상화를 통해서 Windows OS를 준비하시거나 별도의 Windows 노트북을 지참하시는 것을 권장합니다. 이는 MacBook에는 Visual Studio (Windows)를 설치할 수 없기에 일부 실습(예, 실습 4)을 수행하실 수 없기 때문입니다
 
 ### 참가자 준비물 (필수)
 > 1. 노트북 (Windows OS)
@@ -87,14 +89,21 @@ MacBook 유저의 경우에는 가상화를 통해서 Windows OS를 준비하시
 > - Azure CLI 설치
 >   - Windows : https://aka.ms/InstallAzureCliWindows    
 >   - Mac OS : https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest  
-> - Node 8.5 이상의 버전 설치 
->   - https://nodejs.org/en/
-> - Azure Functions Core Tools 설치   
->   - Windows : npm i -g azure-functions-core-tools@core    
->   - Mac OS : sudo npm i -g azure-functions-core-tools@core --unsafe-perm   
 > - Postman 설치
 >   - https://www.getpostman.com/postman     
 > - Azure Storage Explorer 설치
 >   - https://azure.microsoft.com/en-us/features/storage-explorer/
-> 
-> ## 꼭 미리 설치하고 오세요!!!!
+> ### 다음은 순서대로 설치하시기 바랍니다
+> 1.  Node 8.5 이상의 Stable 버전 설치 (9.X 버전은 안됩니다)
+>       - https://nodejs.org/en/     
+> 2. .NET Core 2.0 런타임 설치 
+>       - x64 : [https://www.microsoft.com/net/download/thank-you/dotnet-runtime-2.0.3-windows-x64-installer](https://www.microsoft.com/net/download/thank-you/dotnet-runtime-2.0.3-windows-x64-installer)
+>       - x86: [https://www.microsoft.com/net/download/thank-you/dotnet-runtime-2.0.3-windows-x86-installer](https://www.microsoft.com/net/download/thank-you/dotnet-runtime-2.0.3-windows-x86-installer)
+> 3. Azure Functions Core Tools 설치 (CMD 명령 프롬프트에서 실행) 
+>       - npm i -g azure-functions-core-tools@core    
+>       - Mac OS인 경우 : sudo npm i -g azure-functions-core-tools@core --unsafe-perm   
+> 4. Azure Functions Pack 설치 (CMD 명령 프롬프트에서 실행) 
+>       - npm i -g azure-functions-pack    
+
+    
+> # 꼭 미리 설치하고 오세요!!!!
