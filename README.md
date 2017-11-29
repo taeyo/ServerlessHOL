@@ -109,3 +109,4 @@ MacBook 유저의 경우에는 가상화를 통해서 Windows OS를 준비하시
 > # 꼭 미리 설치하고 오세요!!!!
 
 Emotion 11420bd42c4149a2be96ffe37ebcdb6d
+Text ce758d0b271845e09a7a323ee9000892
