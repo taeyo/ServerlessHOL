@@ -24,18 +24,22 @@
 
 - 실습 1 : 온라인으로 Azure Functions 개발 실습 (20분)
     - Azure Portal을 통한 코딩 실습
-	- 브라우저 및 PostMan을 사용한 테스트
     - 트리거, 바인딩 실습
-	- 모니터링 및 관리 테스트
+	- 브라우저 및 PostMan을 사용한 테스트
+    - Authorization Level에 따른 테스트
+	- 모니터링 및 관리 실습
 
 - 실습 2 : Azure CLI를 이용한 Function 개발 실습 (20분) 
 	- Command Line Interface를 통해서 개발
     - 로컬 머신 테스트
-	- Function pack을 이용한 서버 배포
+    - VS Code를 이용한 Javascript(Node.js) 로컬 디버깅
+    - Function pack을 이용한 서버 배포
 
 - 실습 3 : 이미지 프로세싱 실습 (30분)
+    - 원본 링크 : [https://github.com/lindydonna/CoderCards](https://github.com/lindydonna/CoderCards)
     - Blob 트리거와 이미지 프로세싱 실습 
     - 기존 개발되어 있는 소스를 사용하여 변형 실습
+    - SCM(Kudu)을 이용한 폴더 업로드
     - 시나리오
         - 인물 사진을 Blob 저장소에 저장하면
         - 해당 이미지를 Microsoft AI : Vision API로 분석하여
@@ -43,7 +47,7 @@
         - Output용 Blob 저장소에 변형된 이미지를 저장
 
 - 실습 4 : Visual Studio를 이용한 Function 개발 실습 (20분)
-    - 참고 링크 : [http://docs.microsoft.com/en-us/azure/azure-functions/functions-develop-vs](http://docs.microsoft.com/en-us/azure/azure-functions/functions-develop-vs)   
+    - 참고 링크 : [http://docs.microsoft.com/en-us/azure/azure-functions/functions-develop-vs](http://docs.microsoft.com/en-us/azure/azure-functions/functions-develop-vs) 
 	- 최강의 RAD/IDE 도구인 Visual Studio를 이용한 실습
 	- Queue 트리거를 통한 메시지 수신
     - 로컬 디버깅 실습
@@ -55,6 +59,7 @@
 
 - 실습 5 : Logic 앱을 사용한 워크플로우 실습 (30분)
 	- Facebook과 Blob Storage(Dropbox) 연계 실습
+    - 원본 참조 : [https://github.com/options/choco](https://github.com/options/choco)
     - 시나리오
         - 자신의 페이스북 담벼락에 글을 남기면
         - 그 텍스트를 음성으로 변환(Text to Sppech)하고
@@ -107,12 +112,3 @@ MacBook 유저의 경우에는 가상화를 통해서 Windows OS를 준비하시
 
     
 > # 꼭 미리 설치하고 오세요!!!!
-
-Emotion Key	 
-11420bd42c4149a2be96ffe37ebcdb6d	 
-https://westus.api.cognitive.microsoft.com/emotion/v1.0
- 
-Text	 
-ce758d0b271845e09a7a323ee9000892	 
-https://westus.api.cognitive.microsoft.com/text/analytics/v2.0	 
-
