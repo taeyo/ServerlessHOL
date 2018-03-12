@@ -6,11 +6,12 @@ using System.IO;
 using System.Drawing;
 using System.Drawing.Imaging;
 
-#region POCO definitions 
+ #region POCO definitions 
 public class Face
 {
+    public string FaceId { get; set; }
+    public FaceAttributes FaceAttributes { get; set; }
     public FaceRectangle FaceRectangle { get; set; }
-    public Scores Scores { get; set; }
 }
 
 public class FaceRectangle
@@ -20,8 +21,12 @@ public class FaceRectangle
     public int Width { get; set; }
     public int Height { get; set; }
 }
+public class FaceAttributes
+{
+    public Emotion Emotion { get; set; }
+}
 
-public class Scores
+public class Emotion
 {
     public double Anger { get; set; }
     public double Contempt { get; set; }
@@ -133,7 +138,7 @@ static ImageCodecInfo GetEncoder(ImageFormat format)
 
 public static double RoundScore(double score) => Math.Round(score * 100);
 
-public static void NormalizeScores(Scores scores)
+public static void NormalizeScores(Emotion scores)
 {
     scores.Anger     = RoundScore(scores.Anger);
     scores.Happiness = RoundScore(scores.Happiness);
