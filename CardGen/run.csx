@@ -36,7 +36,9 @@ public static async Task Run(byte[] image, string name, Stream outputBlob,
     // var imageData = new Face[] { 
     //     new Face() {
     //         FaceRectangle = new FaceRectangle(),
-    //         Scores = new Scores() { Happiness = 1.0 }
+    //         FaceAttributes = new FaceAttributes(){
+    //            Emotion = new Emotion() { Happiness = 1.0 }
+    //         }
     //     }
     // };
 
