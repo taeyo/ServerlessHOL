@@ -14,16 +14,12 @@
     - Resource group : Az-Hol-Serverless
     - OS : Windows
     - Pricing Tier : B1 Basic
-3. Emotion API(preview) 만들기
-    - Name : **EmotionApi-dev** 
+3. Face API 만들기
+    - Name : **FaceApi-dev** 
     - Location : West Us
     - Pricing Tier : F0
     - Resource group : Az-Hol-Serverless
-4. Text Analytics API (preview) 만들기
-    - Name : **TextAnalyApi-Dev** 
-    - Location : japan west
-    - Pricing Tier : F0
-5. Storage account - blob, file, table, queue 만들기
+4. Storage account - blob, file, table, queue 만들기
     - Name : **serverlessstor** 
     - Replication : LRS
     - Location : japan west
@@ -44,6 +40,4 @@
 
 > 시작 전에 복사해 둘 것
 >	- Storage Account 연결 문자열 설정
->	- Emotion API의 키 
->   - Text Analytics 의 키 
->   - Text Analytics 의 URL 
+>	- Face API의 endpoint, key 
