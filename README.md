@@ -17,14 +17,14 @@
     - 필요한 Azure 리소스 생성
         - 리소스 그룹, 저장소 계정, 앱 서비스 계획 등
 
-- 실습 1 : 온라인으로 Azure Functions 개발 실습 (20분)
+- 실습 1 : 온라인으로 Azure Functions 개발 실습 (30분)
     - Azure Portal을 통한 코딩 실습
     - 트리거, 바인딩 실습
 	- 브라우저 및 PostMan을 사용한 테스트
     - Authorization Level에 따른 테스트
 	- 모니터링 및 관리 실습
 
-- 실습 2 : Azure CLI를 이용한 Function 개발 실습 (20분) 
+- 실습 2 : Azure CLI를 이용한 Function 개발 실습 (30분) 
 	- Command Line Interface를 통해서 개발
     - 로컬 머신 테스트
     - VS Code를 이용한 Javascript(Node.js) 로컬 디버깅
