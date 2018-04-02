@@ -4,19 +4,10 @@
 
 이번 HOL에서는 Azure에서 제공하는 서버리스 기술인 Function App과 Logic App을 직접 코딩하고 개발하면서 그 뛰어난 유연성과 효율성을 직접 느낄 수 있도록 할 예정입니다. 우선 서버리스의 기본적인 개요를 전문 강사의 기술 세션을 통해서 살펴본 뒤, 초급부터 중급에 이르는 다양한 실습들을 각자 자신의 노트북에서 직접 Coding 해 보는 시간을 갖습니다.
 
-자주 접하기 쉽지 않은 '실습' 워크샵이기에 서버리스를 배워보고 싶으는 분들은 이번 HOL을 놓치지 마세요!
 
-[update] 2018년 3월 12일
-- 기존의 Emotion API가 Face API로 통합됨에 따라서, 기존 실습을 Face API를 사용하도록 변경하였음
-- CardGen의 소스코드를 변경하였고, Azure 리소스 생성 시에 Emotion이 아닌 Face API를 생성해야 함
-
-#### **대상** : 기업에서 근무하는 초, 중급 개발자
-
-#### **강사** : 한국 마이크로소프트 김태영 부장 (feat. Taeyo)
+#### **강사** : 한국 마이크로소프트 김태영(Taeyo) 부장 
 
 #### 실습시간(예상) : 5 시간 
-
-#### 참가자 특전 : (원할 경우) 서버리스 관련 무료 컨설팅/핵페스트 프로그램 제공 
 
 ## HOL(Hands-on Lab) 진행 순서
 
@@ -50,19 +41,12 @@
         - 행복 지수에 따라 이미지 배경을 변경 및 이름과 직급을 기입
         - Output용 Blob 저장소에 변형된 이미지를 저장
 
-- 실습 4 : Visual Studio를 이용한 Function 개발 실습 (20분)
-    - 참고 링크 : [http://docs.microsoft.com/en-us/azure/azure-functions/functions-develop-vs](http://docs.microsoft.com/en-us/azure/azure-functions/functions-develop-vs) 
-	- 최강의 RAD/IDE 도구인 Visual Studio를 이용한 실습
-	- Queue 트리거를 통한 메시지 수신
-    - 로컬 디버깅 실습
-    - VS를 사용한 빠른 배포 실습
-
 ### 미니 세션 : 서버리스 핵페스트 프로그램 소개 (10분)
 
 ### 기술 세션 : Azure의 Serverless 컴퓨팅 II (20분)
 
-- 실습 5 : Logic 앱을 사용한 워크플로우 실습 (30분)
-	- Facebook과 Blob Storage(Dropbox) 연계 실습
+- 실습 4 : Logic 앱을 사용한 워크플로우 실습 (30분)
+	- Facebook과 Blob Storage 연계 실습
     - 원본 참조 : [https://github.com/options/choco](https://github.com/options/choco)
     - 시나리오
         - 자신의 페이스북 담벼락에 글을 남기면
@@ -70,7 +54,7 @@
         - 지정된 Blob 저장소에 파일로 생성함
         - (option) 생성된 음성 파일을 DropBox에도 생성
 
-- 실습 6 : Azure Function + Logic App 종합 실습 (40분)
+- 실습 5 (옵션 실습) : Azure Function + Logic App 종합 실습 (40분)
     - 참고 링크 : [http://docs.microsoft.com/en-us/azure/azure-functions/functions-twitter-email](http://docs.microsoft.com/en-us/azure/azure-functions/functions-twitter-email)     
     - 페이스북에 부정적인 글이 올라오면(영어)
     - 그 구문의 sentiment(감정)을 해석해서, 신호등 색상으로 상태를 판단
@@ -85,14 +69,9 @@ MacBook 유저의 경우에는 가상화를 통해서 Windows OS를 준비하시
 > 2. Azure 계정(무료 계정이든, MSDN 계정이든, 회사 계정이든)  
 > 3. 테더링 가능한 스마트폰(네트워크 사정이 안 좋을 경우 테더링을 강추합니다)  
 
-
 **준비물 미 준비 시에는 실습을 제대로 따라하실 수 없으며, 그 부분은 본인의 책임입니다**
 
 ### 강좌 참여 시 사전 준비 및 설치 사항(필수)
-> - Visual Studio 2017. (Community 버전 무관)  
->   (빨간 박스로 표시한 Azure 개발은 필수이며, 그 밖에 필요한 것 설치)  
->   이미 설치한 사람은 반드시 업데이트를 해서 **15.4 버전** 이상으로 업데이트    
->   ![이미지](./images/install.png)
 >    
 > - Visual Studio Code 설치 : https://code.visualstudio.com/  
 > - Azure CLI 설치
@@ -106,13 +85,11 @@ MacBook 유저의 경우에는 가상화를 통해서 Windows OS를 준비하시
 > 1.  Node 8.5 이상의 Stable 버전 설치 (9.X 버전은 안됩니다)
 >       - https://nodejs.org/en/     
 > 2. .NET Core 2.0 런타임 설치 
->       - x64 : [https://www.microsoft.com/net/download/thank-you/dotnet-runtime-2.0.3-windows-x64-installer](https://www.microsoft.com/net/download/thank-you/dotnet-runtime-2.0.3-windows-x64-installer)
->       - x86: [https://www.microsoft.com/net/download/thank-you/dotnet-runtime-2.0.3-windows-x86-installer](https://www.microsoft.com/net/download/thank-you/dotnet-runtime-2.0.3-windows-x86-installer)
+>       - https://www.microsoft.com/net/download/windows    
 > 3. Azure Functions Core Tools 설치 (CMD 명령 프롬프트에서 실행) 
 >       - npm i -g azure-functions-core-tools@core    
 >       - Mac OS인 경우 : sudo npm i -g azure-functions-core-tools@core --unsafe-perm   
 > 4. Azure Functions Pack 설치 (CMD 명령 프롬프트에서 실행) 
 >       - npm i -g azure-functions-pack    
 
-    
 > # 꼭 미리 설치하고 오세요!!!!
