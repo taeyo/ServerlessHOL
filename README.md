@@ -98,7 +98,7 @@
 > 2. .NET Core 2.0 런타임 설치 
 >       - https://www.microsoft.com/net/download/windows    
 > 3. Azure Functions Core Tools 설치 (CMD 명령 프롬프트에서 실행) 
->       - npm i -g azure-functions-core-tools@core    
+>       - npm i -g azure-functions-core-tools	    
 >       - Mac OS인 경우 : sudo npm i -g azure-functions-core-tools@core --unsafe-perm   
 > 4. Azure Functions Pack 설치 (CMD 명령 프롬프트에서 실행) 
 >       - npm i -g azure-functions-pack    
