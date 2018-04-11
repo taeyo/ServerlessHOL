@@ -31,12 +31,16 @@
     - VS Code를 이용한 Javascript(Node.js) 로컬 디버깅
     - Function pack을 이용한 서버 배포
     
-> func init	
-> func new	
-> func host start --debug vscode	
->	 
-> funcpack pack .	
-> azure login	
+> func init 
+
+> func new 	
+
+> func host start --debug vscode 
+	 
+> funcpack pack . 
+
+> azure login	 
+
 > func azure functionapp publish <펑션앱이름>	
 
 - 실습 3 : 이미지 프로세싱 실습 (30분)
