@@ -104,3 +104,5 @@
 >       - npm i -g azure-functions-pack    
 
 > # 꼭 미리 설치하고 오세요!!!!
+
+test
